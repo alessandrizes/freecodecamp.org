@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html leng="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Smileflix Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer our form</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/1791/1791342.png">
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">
+                Name
+                <input id="name" type="text" placeholder="Enter your name" required />
+            </label>
+            <label id="email-label" for="email">
+                Email
+                <input id="email" type="email" placeholder="Enter your email" required />
+            </label>
+            <label id="number-label" for="number">
+                Age
+                <input id="number" type="number" placeholder="Enter your age" min="10" max="99" />
+            </label>
+            <label for="dropdown">
+                Which option best describes your current role?
+                <select id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="prefer-no-to-say">Prefer no to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            Would you recommend Smileflix to a friend?
+            <label for="definitely">
+                <input id="definitely" type="radio" value="definitely" name="recommend" class="inline" checked />
+                Definitely
+            </label>
+            <label for="maybe">
+                <input id="maybe" type="radio" value="maybe" name="recommend" class="inline" />
+                Maybe
+            </label>
+            <label for="not-sure">
+                <input id="not-sure" type="radio" value="not-sure" name="recommend" class="inline" />
+                Not sure
+            </label>
+        </fieldset>
+        <fieldset>
+            Do you subscribe to another streaming service?
+            <span class="clue">(Check all that apply)</span>
+            <label for="netflix">
+                <input id="netflix" type="checkbox" name="subscribe" value="netflix" class="inline" />
+                Netflix
+            </label>
+            <label for="amazon-prime">
+                <input id="amazon-prime" type="checkbox" name="subscribe" value="amazon-prime" class="inline" />
+                Amazon Prime
+            </label>
+            <label for="hbo-max">
+                <input id="hbo-max" type="checkbox" name="subscribe" value="hbo-max" class="inline" />
+                HBO Max
+            </label>
+            <label for="globoplay">
+                <input id="globoplay" type="checkbox" name="subscribe" value="globoplay" class="inline" />
+                Globoplay
+            </label>
+            <label for="disney-plus">
+                <input id="disney-plus" type="checkbox" name="subscribe" value="disney-plus" class="inline" />
+                Disney+
+            </label>
+            <label for="paramount-plus">
+                <input id="paramount-plus" type="checkbox" name="subscribe" value="paramount-plus" class="inline" />
+                Paramount+
+            </label><label for="crunchyroll">
+                <input id="crunchyroll" type="checkbox" name="subscribe" value="crunchyroll" class="inline" />
+                Crunchyroll
+            </label>
+        </fieldset>
+        <label for="comments">
+            Any comments or suggestions?
+            <textarea id="comments" rows="3" cols="30" placeholder="Open your heart, tell everything..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
